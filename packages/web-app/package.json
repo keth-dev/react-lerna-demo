@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
+  },
   "dependencies": {
     "@keth-dev/lerna-demo-shared-ui": "^0.0.2",
     "react": "^17.0.1",
