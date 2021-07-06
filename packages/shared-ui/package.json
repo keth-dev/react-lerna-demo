@@ -7,22 +7,17 @@
     "UI"
   ],
   "author": "keth-dev <77727801+keth-dev@users.noreply.github.com>",
-  "homepage": "https://github.com/keth-dev/react-lerna-demo#readme",
   "license": "ISC",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "files": ["src"],
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
-  },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/keth-dev/react-lerna-demo/issues"

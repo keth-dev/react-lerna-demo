@@ -1,5 +1,10 @@
 import React from "react";
+import { Button } from "@keth-dev/lerna-demo-shared-ui";
 
 export const App = () => {
-  return <div>Hello World!!</div>;
+  return (
+    <div>
+      Hello World!! <Button label={"Test"} />
+    </div>
+  );
 };
