@@ -27,7 +27,6 @@ jobs:
           git config --local user.name "GitHub Action"
 
       - run: lerna bootstrap
-      - run: lerna version patch --yes
-      - run: lerna publish from-git --yes
+      - run: lerna publish --patch --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
