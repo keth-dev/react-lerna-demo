@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@keth-dev/lerna-demo-shared-ui": "^0.0.6",
     "react": "^17.0.1",
