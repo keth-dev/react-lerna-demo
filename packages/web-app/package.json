@@ -11,10 +11,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
+    "url": "git+https://github.com/keth-dev/react-lerna-demo.git",
+    "directory": "packages/web-app"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@keth-dev:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@keth-dev/lerna-demo-shared-ui": "^0.0.7",

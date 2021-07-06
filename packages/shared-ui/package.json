@@ -19,10 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
+    "url": "git+https://github.com/keth-dev/react-lerna-demo.git",
+    "directory": "packages/shared-ui"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@keth-dev:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/keth-dev/react-lerna-demo/issues"
