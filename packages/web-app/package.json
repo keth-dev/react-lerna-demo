@@ -15,7 +15,7 @@
     "directory": "packages/web-app"
   },
   "publishConfig": {
-    "@keth-dev:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@keth-dev/lerna-demo-shared-ui": "^0.0.8",
