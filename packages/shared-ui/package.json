@@ -1,6 +1,6 @@
 {
   "name": "@keth-dev/lerna-demo-shared-ui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Shared UI Library",
   "keywords": [
     "Storybook",
