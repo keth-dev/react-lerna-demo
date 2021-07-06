@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keth-dev/react-lerna-demo.git"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap"
   },
