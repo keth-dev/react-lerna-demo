@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "@keth-dev/react-lerna-demo",
   "private": true,
   "repository": {
     "type": "git",
