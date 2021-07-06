@@ -30,4 +30,4 @@ jobs:
       - run: lerna version patch --yes
       - run: lerna publish from-git --yes
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
