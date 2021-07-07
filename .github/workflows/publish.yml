@@ -26,6 +26,6 @@ jobs:
           git config --local user.name "GitHub Action"
 
       - run: npm run bootstrap
-      - run: npm run publish
+      - run: npm run publish --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
