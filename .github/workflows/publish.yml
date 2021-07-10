@@ -1,4 +1,4 @@
-name: Custom Versioning
+name: Auto Patch-Version Release
 
 on:
   push:
