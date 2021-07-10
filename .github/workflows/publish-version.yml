@@ -1,0 +1,34 @@
+name: Node.js Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      packageVersion:
+        description: 'Package Version'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # to fetch all history for all branches and tags.
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          always-auth: true
+          registry-url: https://npm.pkg.github.com
+          scope: '@keth-dev'
+
+      - name: Setup Github Credentials
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - run: npm run bootstrap
+      - run: lerna version ${{ github.event.inputs.packageVersion }}
+      - run: lerna publish from-git --registry https://npm.pkg.github.com
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.REGISTRY_AUTH_TOKEN }}
