@@ -10,7 +10,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish patch --registry https://npm.pkg.github.com"
+    "publish": "lerna publish patch --from-git --registry https://npm.pkg.github.com"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
