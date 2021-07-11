@@ -8,6 +8,7 @@ interface PageProps {
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;
+  children?: React.ReactNode;
 }
 
 export const Page = ({
@@ -15,6 +16,7 @@ export const Page = ({
   onLogin,
   onLogout,
   onCreateAccount,
+  children,
 }: PageProps) => (
   <article>
     <Header
@@ -90,5 +92,6 @@ export const Page = ({
         Viewports addon in the toolbar
       </div>
     </section>
+    {children && <section>{children}</section>}
   </article>
 );

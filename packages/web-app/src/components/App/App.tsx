@@ -1,10 +1,14 @@
 import React from "react";
-import { Button } from "@keth-dev/lerna-demo-shared-ui";
+import { Page } from "@keth-dev/lerna-demo-shared-ui";
 
 export const App = () => {
   return (
-    <div>
-      Hello World!! <Button label={"Button 15"} />
-    </div>
+    <Page
+      onLogin={console.log}
+      onCreateAccount={console.log}
+      onLogout={console.log}
+    >
+      Hello World from App
+    </Page>
   );
 };
