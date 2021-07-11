@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/keth-dev/react-lerna-demo/compare/@keth-dev/lerna-demo-web-app@0.1.0...@keth-dev/lerna-demo-web-app@0.2.0) (2021-07-11)
+
+
+### Features
+
+* **web-app:** update text in app ([bfbd894](https://github.com/keth-dev/react-lerna-demo/commit/bfbd8942bed9c0353588bed87022ec44f1f7ca22))
+
+
+### BREAKING CHANGES
+
+* **web-app:** trigger breaking change
+
+
+
+
+
 # [0.1.0](https://github.com/keth-dev/react-lerna-demo/compare/@keth-dev/lerna-demo-web-app@0.0.29...@keth-dev/lerna-demo-web-app@0.1.0) (2021-07-11)
 
 
