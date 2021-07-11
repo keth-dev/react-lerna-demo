@@ -1,6 +1,6 @@
 {
   "name": "@keth-dev/lerna-demo-web-app",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "React App",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@keth-dev/lerna-demo-shared-ui": "^0.0.23",
+    "@keth-dev/lerna-demo-shared-ui": "^0.0.24",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
