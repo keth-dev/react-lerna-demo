@@ -8,7 +8,7 @@ export const App = () => {
       onCreateAccount={console.log}
       onLogout={console.log}
     >
-      Hello World from Web App 10
+      Hello World from Web App 11
     </Page>
   );
 };
