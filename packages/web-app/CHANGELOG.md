@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/keth-dev/react-lerna-demo/compare/@keth-dev/lerna-demo-web-app@1.1.0...@keth-dev/lerna-demo-web-app@2.0.0) (2021-07-11)
+
+
+* refactor!: drop something ([007d37a](https://github.com/keth-dev/react-lerna-demo/commit/007d37a35843b9f7270da7761da98ea56ad9f9ff))
+
+
+### BREAKING CHANGES
+
+* refactor to use something
+
+
+
+
+
 # [1.1.0](https://github.com/keth-dev/react-lerna-demo/compare/@keth-dev/lerna-demo-web-app@1.0.1...@keth-dev/lerna-demo-web-app@1.1.0) (2021-07-11)
 
 
