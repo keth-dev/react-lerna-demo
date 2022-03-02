@@ -9,7 +9,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "bootstrap": "npm i && lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
     "publish": "lerna publish patch"
   },
   "devDependencies": {

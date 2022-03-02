@@ -7,6 +7,7 @@ The mono-repository has two packages:
 
 ## Development
 
+* Run `npm i` to install root dependencies
 * Run `npm run bootstrap` to install dependencies in all packages
 * To develop
   * Shared UI-Library: `cd shared-ui && npm run storybook`
