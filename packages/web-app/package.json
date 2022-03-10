@@ -1,6 +1,6 @@
 {
   "name": "@keth-dev/lerna-demo-web-app",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "React App",
   "main": "index.js",
   "scripts": {
