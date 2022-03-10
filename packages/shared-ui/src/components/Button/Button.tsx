@@ -1,4 +1,5 @@
 import * as React from "react";
+import { add } from "@keth-dev/lerna-demo-util-lib";
 import "./button.css";
 
 interface ButtonProps {
@@ -46,7 +47,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label} 14
+      {label} {add(1, 3)}
     </button>
   );
 };
