@@ -10,6 +10,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
     "publish": "lerna publish patch"
   },
   "devDependencies": {
