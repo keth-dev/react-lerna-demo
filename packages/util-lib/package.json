@@ -1,6 +1,6 @@
 {
   "name": "@keth-dev/lerna-demo-util-lib",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "Utility Lib",
   "author": "keth <77727801+keth-dev@users.noreply.github.com>",
   "homepage": "https://github.com/keth-dev/react-lerna-demo#readme",
