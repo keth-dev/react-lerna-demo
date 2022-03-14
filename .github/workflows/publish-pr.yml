@@ -25,6 +25,8 @@ jobs:
           git config --local user.name "GitHub Action"
 
       - run: cd ./packages/web-app && npm i
+      - env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run bootstrap
         env:
