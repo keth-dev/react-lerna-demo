@@ -12,6 +12,8 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "publish": "lerna publish patch",
+    "publish:pr": "lerna publish prepatch --include-merged-tags --no-git-tag-version --exact --yes --preid $(git rev-parse --short HEAD)",
+    "version": "lerna version patch",
     "version-pr": "lerna version prepatch --include-merged-tags --no-git-tag-version --exact --yes --preid $(git rev-parse --short HEAD)"
   },
   "devDependencies": {
