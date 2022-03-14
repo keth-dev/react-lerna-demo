@@ -1,5 +1,6 @@
 {
   "name": "@keth-dev/react-lerna-demo",
+  "version": "4.0.5",
   "private": true,
   "repository": {
     "type": "git",
