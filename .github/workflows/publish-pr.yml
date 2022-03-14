@@ -27,6 +27,8 @@ jobs:
       - run: npm run bootstrap
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm run publish:pr
-        env:
+      - run: npm run version:pr
+
+      - name: Publish PR packages
+        run: npm run publish:pr
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
