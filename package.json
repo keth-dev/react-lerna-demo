@@ -11,7 +11,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "publish": "lerna publish patch"
+    "publish": "lerna publish patch",
+    "version-pr": "lerna version prepatch --no-git-tag-version"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
