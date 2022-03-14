@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: ${{ github.head_ref }}
           fetch-depth: 0 # to fetch all history for all branches and tags.
 
       - uses: actions/setup-node@v2
