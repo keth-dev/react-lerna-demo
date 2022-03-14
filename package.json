@@ -14,7 +14,7 @@
     "clean": "lerna clean",
     "publish": "lerna publish patch",
     "version": "lerna version patch",
-    "version-pr": "lerna version prepatch --include-merged-tags --no-git-tag-version --exact --yes --preid $(git rev-parse --short HEAD)",
+    "version:pr": "lerna version prepatch --include-merged-tags --no-git-tag-version --exact --yes --preid $(git rev-parse --short HEAD)",
     "publish:pr": "lerna run publish:pr --since --include-merged-tags --stream"
   },
   "devDependencies": {
