@@ -1,0 +1,39 @@
+name: Auto Patch-Version Release on PR
+
+on:
+  pull_request
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0 # to fetch all history for all branches and tags.
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          always-auth: true
+          registry-url: https://npm.pkg.github.com
+          scope: '@keth-dev'
+
+      - name: Setup Github Credentials
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - run: cd ./packages/web-app && NODE_ENV=production npm i --strict-peer-deps
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: npm run bootstrap
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#      - run: npm run version:pr
+#
+#      - run: npm run publish:pr
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,6 @@
 {
   "name": "@keth-dev/react-lerna-demo",
+  "version": "4.0.5",
   "private": true,
   "repository": {
     "type": "git",
@@ -11,7 +12,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "publish": "lerna publish patch"
+    "publish": "lerna publish patch",
+    "version": "lerna version patch",
+    "version:pr": "lerna version prepatch --include-merged-tags --no-git-tag-version --exact --yes --preid $(git rev-parse --short HEAD)",
+    "publish:pr": "lerna run publish:pr --since --include-merged-tags --stream"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
