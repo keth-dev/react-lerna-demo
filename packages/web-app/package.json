@@ -1,6 +1,6 @@
 {
   "name": "@keth-dev/lerna-demo-web-app",
-  "version": "4.0.5",
+  "version": "4.0.6-059cdd9.0",
   "description": "React App",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@keth-dev/lerna-demo-shared-ui": "4.0.6-059cdd9.0",
-    "@keth-dev/lerna-demo-util-lib": "4.0.6-1b596d6.0",
+    "@keth-dev/lerna-demo-util-lib": "4.0.6-059cdd9.0",
     "react": "~17.0.2",
     "react-dom": "~17.0.2"
   },
